@@ -1,0 +1,50 @@
+<h1>Realtime Products - Socket</h1>
+
+<form id="form">
+    <label for="title">Name</label>
+    <input type="text" name="title" id="title" required>
+    <br><br>
+
+    <label for="description">Descripción</label>
+    <input type="text" name="description" id="description" required>
+    <br><br>
+
+    <label for="code">Codigo</label>
+    <input type="text" name="code" id="code" required>
+    <br><br>
+
+    <label for="price">Precio</label>
+    <input type="number" name="price" id="price" required>
+    <br><br>
+
+    <label for="category">Categoria</label>
+    <input type="text" name="category" id="category" required>
+    <br><br>
+
+    <label for="thumbnail">Imagen(agregar ruta de una imagen de internet)</label>
+    <input type="text" name="thumbnail" id="thumbnail">
+    <br><br>
+
+    <label for="stock">Stock</label>
+    <input type="number" name="stock" id="stock" required>
+    <br><br>
+
+    <input type="submit" value="SEND">
+</form>
+
+<form id="formElim">
+    <h3 >ELIMINAR PRODUCTOS</h3> 
+    <label for="title">ID PRODUCTO</label>
+    <input type="number" name="idProduct" id="idProduct" >
+    <br><br>
+    <input type="submit" value="SEND">
+</form>
+<br><br>
+
+
+<ul id="product-list">
+  <!-- La lista de productos en tiempo real se llenará aquí -->
+</ul>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/index.js" charset="utf-8"></script>
